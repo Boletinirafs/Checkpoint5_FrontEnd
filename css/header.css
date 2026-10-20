@@ -1,21 +1,30 @@
-header{
+@import url('./globals.css');
+
+header {
     display: flex;
     background-color: var(--bgPrimary);
     padding: 24px 32px;
     height: 96px;
     justify-content: space-between;
+
 }
 
-#logoImg{
-    width: 84;
-    height: 32;
-    gap: 8px;
-}
-
-.navigation{
+.navigation {
     display: flex;
-    width: 579;
-    height: 48;
+    width: 579px;
     gap: 24px;
-}   
+    justify-content: space-between;
+    align-items: center;
+}
 
+#downloadButton{
+    border: 0px solid black;
+    border-radius: 8px;
+    height: 40px;
+    padding: 12px 24px;
+    background-color: var(--btPrimary);
+}
+
+.navigation p{
+    color: var(--pPrimary)
+}
