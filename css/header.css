@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    background-color: var(--bgPrimary);
+    padding: 24px 32px;
+    height: 96px;
+    justify-content: space-between;
+}
+
+#logoImg{
+    width: 84;
+    height: 32;
+    gap: 8px;
+}
+
+.navigation{
+    display: flex;
+    width: 579;
+    height: 48;
+    gap: 24px;
+}   
+
