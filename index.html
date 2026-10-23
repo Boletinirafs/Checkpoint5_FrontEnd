@@ -1,33 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/globals.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-
+    <title>Zingen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="content-wrapper header-content">
+            <a class="brand" href="#">Zingen</a>
 
-    <header>
-        <img src="images/Zingen.svg" alt="logo" id="logoImg">
-        <nav class="navigation">
-            <p>Conheça o app</p>
-            <p>Funcionalidades</p>
-            <p>Planos e preços</p>
-            <button id="downloadButton">Baixar Agora</button>
-        </nav>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#about">Conheça o app</a></li>
+                    <li><a href="#features">Funcionalidades</a></li>
+                    <li><a href="#pricing">Planos e preços</a></li>
+                </ul>
+            </nav>
 
+            <a class="button button-light button-small" href="#download">Baixar agora</a>
+        </div>
     </header>
 
+    <main>
+        <section class="hero">
+            <div class="content-wrapper">
+                <img class="sound-waves" src="images/ondas.png" alt="Ondas de som">
+                <h1>Quem canta seus males espanta</h1>
+                <p class="hero-subtitle">Cantar nunca foi tão fácil</p>
 
+                <div class="hero-actions">
+                    <a class="button" href="#pricing">Ver planos</a>
+                    <a class="button button-light" href="#download">Baixar agora</a>
+                </div>
+            </div>
+        </section>
 
+        <section class="about" id="about">
+            <div class="content-wrapper about-content">
+                <img class="app-phones" src="images/app-phones.png" alt="Telas do aplicativo Zingen">
 
+                <div class="about-copy">
+                    <span class="section-label">Conheça o app</span>
+                    <h2>O aplicativo perfeito para aprender a cantar</h2>
+                    <p>
+                        Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias
+                        das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar,
+                        sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance
+                        te ajudando a melhorar seu canto.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <section class="features" id="features">
+            <div class="content-wrapper features-grid">
+                <article class="feature-card">
+                    <img class="feature-icon" src="images/icons/magic.svg" alt="Ícone de varinha mágica">
+                    <h3>A maior biblioteca de músicas de Karaokê!</h3>
+                    <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
+                </article>
+
+                <article class="feature-card feature-card-wide">
+                    <div class="feature-copy">
+                        <img class="feature-icon" src="images/icons/game.svg" alt="Ícone de controle">
+                        <h3>Experiência gamificada</h3>
+                        <p>
+                            Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe
+                            reconhecimento e comemore sua evolução!
+                        </p>
+                    </div>
+                    <img class="phone-preview phone-bottom" src="images/phone-karaoke.png" alt="Tela de karaokê do app">
+                </article>
+
+                <article class="feature-card">
+                    <img class="feature-icon" src="images/icons/mic.svg" alt="Ícone de microfone">
+                    <h3>Grave suas performances</h3>
+                    <p>
+                        Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação
+                        de áudio e vídeo permite que você aproveite a experiência ao máximo!
+                    </p>
+                </article>
+
+                <article class="feature-card feature-card-wide">
+                    <img class="phone-preview phone-bottom phone-left" src="images/phone-feed.png" alt="Feed da comunidade no app">
+
+                    <div class="feature-copy">
+                        <img class="feature-icon" src="images/icons/users.svg" alt="Ícone de comunidade">
+                        <h3>Compartilhe com a comunidade</h3>
+                        <p>
+                            Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de
+                            outras pessoas no seu feed!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="feature-card feature-card-wide">
+                    <div class="feature-copy">
+                        <img class="feature-icon" src="images/icons/music.svg" alt="Ícone de música">
+                        <h3>Letras em tempo-real</h3>
+                        <p>
+                            Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você
+                            também pode ativar a voz original da música para ajudar.
+                        </p>
+                    </div>
+                    <img class="phone-preview phone-top" src="images/phone-lyrics.png" alt="Letra da música em tempo real no app">
+                </article>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="content-wrapper">
+                <div class="pricing-heading">
+                    <span class="section-label">Planos e preços</span>
+                    <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+                </div>
+
+                <div class="pricing-list">
+                    <article class="pricing-card">
+                        <h3>Básico</h3>
+                        <p class="plan-description">Baixe o app e comece a cantar agora mesmo!</p>
+                        <p class="plan-price">Grátis</p>
+                        <a class="button button-wide" href="#download">Baixar agora</a>
+
+                        <ul class="plan-benefits">
+                            <li>Com anúncios</li>
+                            <li>Até 5 músicas por dia</li>
+                            <li>Cante apenas as músicas disponíveis no plano gratuito</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card premium-plan">
+                        <span class="promo-badge">1 mês grátis</span>
+                        <h3>Premium</h3>
+                        <p class="plan-description">Ideal para quem já cansou de passar vergonha no Karaokê</p>
+                        <p class="plan-price">R$ 24,90 <span>/mês</span></p>
+                        <a class="button button-light button-wide" href="#download">Experimente de graça</a>
+
+                        <ul class="plan-benefits">
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card">
+                        <h3>Família</h3>
+                        <p class="plan-description">Para aquelas famílias que adoram se reunir pra cantar</p>
+                        <p class="plan-price">R$ 21,90 <span>/mês por pessoa</span></p>
+                        <a class="button button-wide" href="#download">Assinar agora</a>
+
+                        <ul class="plan-benefits">
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                        <p class="plan-note">Mínimo de 4 pessoas no plano família.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <div class="content-wrapper">
+                <div class="download-panel">
+                    <div class="download-copy">
+                        <span class="section-label">Download</span>
+                        <h2>Bora cantar?</h2>
+                        <p>
+                            Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais
+                            envolvente. Baixe o Zingen agora e transforme suas performances em experiências inesquecíveis!
+                        </p>
+
+                        <div class="app-stores">
+                            <a class="store-link" href="#">
+                                <img src="images/icons/apple.svg" alt="">
+                                <span><small>Baixar na</small>App Store</span>
+                            </a>
+                            <a class="store-link" href="#">
+                                <img src="images/icons/google-play.svg" alt="">
+                                <span><small>Disponível no</small>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="singer-image" src="images/singer.png" alt="Rapaz cantando com fones de ouvido">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="content-wrapper">
+            <div class="footer-top">
+                <a class="brand" href="#">Zingen</a>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#features">Funcionalidades</a></li>
+                            <li><a href="#pricing">Planos e preços</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><img src="images/icons/tiktok.svg" alt="TikTok"></a>
+                    <a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/icons/x.svg" alt="X"></a>
+                    <a href="#"><img src="images/icons/discord.svg" alt="Discord"></a>
+                </div>
+                <p class="copyright">&copy; 2026 Zingen</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

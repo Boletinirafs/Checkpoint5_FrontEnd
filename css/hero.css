@@ -1,0 +1,32 @@
+.hero {
+    padding-top: 56px;
+    text-align: center;
+}
+
+.sound-waves {
+    width: 172px;
+    margin: 0 auto 24px;
+}
+
+.hero-subtitle {
+    color: var(--muted-color);
+    font-size: 20px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .sound-waves {
+        width: 412px;
+    }
+
+    .hero-subtitle {
+        font-size: 36px;
+    }
+}

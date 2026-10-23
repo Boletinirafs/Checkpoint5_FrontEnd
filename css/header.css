@@ -1,30 +1,78 @@
-@import url('./globals.css');
-
-header {
+.header-content {
     display: flex;
-    background-color: var(--bgPrimary);
-    padding: 24px 32px;
-    height: 96px;
-    justify-content: space-between;
-
-}
-
-.navigation {
-    display: flex;
-    width: 579px;
-    gap: 24px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-#downloadButton{
-    border: 0px solid black;
-    border-radius: 8px;
-    height: 40px;
-    padding: 12px 24px;
-    background-color: var(--btPrimary);
+.main-nav {
+    display: none;
 }
 
-.navigation p{
-    color: var(--pPrimary)
+.site-header .button {
+    transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.site-header .button:hover,
+.site-header .button:focus-visible {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    box-shadow: 0 8px 24px rgba(247, 183, 51, 0.25);
+    transform: translateY(-2px);
+}
+
+.site-header .button:focus-visible {
+    outline: 2px solid var(--text-color);
+    outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+    .main-nav {
+        display: block;
+        margin-right: 24px;
+        margin-left: auto;
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 24px;
+    }
+
+    .main-nav a {
+        position: relative;
+        color: var(--muted-color);
+        transition: color 0.25s ease;
+    }
+
+    .main-nav a::after {
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        left: 0;
+        height: 2px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, var(--gradient-start), var(--accent-color));
+        content: "";
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.25s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+        color: var(--text-color);
+    }
+
+    .main-nav a:hover::after,
+    .main-nav a:focus-visible::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .main-nav a:focus-visible {
+        border-radius: 2px;
+        outline: 2px solid var(--accent-color);
+        outline-offset: 6px;
+    }
 }
